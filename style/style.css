@@ -1,0 +1,125 @@
+.loading {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 50%;
+    border: 20px solid rgb(0, 255, 234);
+    border-top: 20px solid rgb(0, 119, 255);
+    border-bottom: 20px solid rgb(0, 119, 255);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background-color: #000;
+}
+
+.hid {
+    display: none;
+}
+
+.img img[src="img/me-28dd1fbca7dfd2d37a8358163c6f9677.png"] {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+@keyframes borde1 {
+    0% {
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+    25% {
+        border-bottom-left-radius: 45px;
+        border-bottom-right-radius: 45px;
+    }
+    50% {
+        border-bottom-left-radius: 55px;
+        border-bottom-right-radius: 55px;
+    }
+    75% {
+        border-bottom-left-radius: 45px;
+        border-bottom-right-radius: 45px;
+    }
+    100% {
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+}
+
+.in {
+    border-radius: 25px;
+}
+
+.back {
+    background-color: #DDD;
+    margin-top: 20px;
+}
+
+footer {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    animation: borde 2s ease-in-out infinite;
+}
+
+@keyframes borde {
+    0% {
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+    }
+    25% {
+        border-top-left-radius: 45px;
+        border-top-right-radius: 45px;
+    }
+    50% {
+        border-top-left-radius: 55px;
+        border-top-right-radius: 55px;
+    }
+    75% {
+        border-top-left-radius: 45px;
+        border-top-right-radius: 45px;
+    }
+    100% {
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+    }
+}
+
+.anmthon {
+    animation-name: zoom;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    cursor: pointer;
+    margin-bottom: 0 !important;
+}
+
+@keyframes zoom {
+    0% {
+        letter-spacing: 1px;
+    }
+    30% {
+        letter-spacing: 2px;
+    }
+    60% {
+        letter-spacing: 3px;
+    }
+    90% {
+        letter-spacing: 2px;
+    }
+    100% {
+        letter-spacing: 1px;
+    }
+}
