@@ -30,7 +30,7 @@ body {
     display: none;
 }
 
-.img img[src="img/me-28dd1fbca7dfd2d37a8358163c6f9677.png"] {
+.img img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
